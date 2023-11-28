@@ -250,6 +250,7 @@ color: #000000;
   border-radius: 5px;
   padding: 10px 20px;
   margin: 200px auto;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
 }
