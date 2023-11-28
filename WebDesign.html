@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+    <nav>
+       
+           <a href="index.html">home</a></li>
+           <a href="WIL.html">Work Integrated Learning</a></li>
+           <a href="DataAnalytics.html">Data Analytics</a></li>
+           <a href="SocialMedia.html">Social Media</a></li>
+           <a href="WebDesign.html">Web Design</a></li>
+        <span></span>
+       </nav>
+       <h1>Web Design</h1>
+   </header> 
+   <main>
+    <div class="input-box">
+        <input type="password" placeholder="password" id="password">
+        <img src="images/eye closed icon.png" id="eyeicon">
+    </div>
+   </main>
+
+   
+</body>
+ <script>
+let password = document.getElementById("password");
+let eyeIcon = document.getElementById("eyeicon");
+
+
+eyeIcon.onclick =function showPassword(){
+    
+if(password.type ==="password"){
+    password.type ="text";
+    eyeIcon.src="images/eye open icon.png";
+}else{
+        password.type = "password";
+        eyeIcon.src = "images/eye closed icon.png";
+ }
+ }
+
+ </script>
+</html>

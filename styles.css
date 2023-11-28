@@ -1,0 +1,311 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  background:linear-gradient(rgba(208, 208, 208, 0.72),rgb(45, 110, 157), rgb(110, 4, 4));
+  background-attachment: fixed;
+}
+
+
+nav{
+  position:relative;
+  width: 100%;
+  max-width: 524px;
+  height: 50px;
+  background: rgb(147, 182, 200) 34, 34;
+  border-radius:8px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:10px auto;
+  }
+nav a{
+  position: relative;
+  display:inline-flex;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  padding: 0 23px;
+  z-index: 1;
+}
+nav span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 100%;
+  background: linear-gradient(45deg, #11064b, #33d3ff);
+  border-radius: 8px;
+  transition: .5s;
+}
+nav a:nth-child(1):hover~span{
+  left: 0;
+}
+nav a:nth-child(2):hover~span{
+  left: 95px;
+}
+nav a:nth-child(3):hover~span{
+  left: 189px;
+  width: 110px;
+}
+nav a:nth-child(4):hover~span{
+  left: 289px;
+  width: 115px;
+}
+nav a:nth-child(5):hover~span{
+  left: 413px;
+  width: 110px;
+}
+h1 ,h2{
+  position:relative;
+  height: 50px;
+  border-radius:8px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:5% auto;
+}
+h2{
+  color: #000000;
+  font-weight: 100;
+  font-style: oblique;
+}
+.container{
+  width:50%;
+  margin:5% 25%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  background:linear-gradient(#428b97, #000000);
+}
+#p1{
+  width: auto;
+  border-radius:8px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:5px auto ;
+  padding: 20px;
+  word-wrap: break-word;
+  color: #ffffff;
+}
+#img1{
+  position:relative;
+  border-radius:8px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:5px auto;
+  max-width: 100%;
+}
+/*wil page*/
+
+#wrapper1{
+  margin:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#img2{
+  width:500px ;
+  position: relative;
+}
+#imgsrc2{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+#content1{
+  height: 100%;
+  width:100%;
+  top: 0;
+  left: 0;
+  position:absolute;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+#content1:hover{
+opacity: 1;
+}
+.parent-container{
+  text-align: center;
+}
+.child-container{
+  border-radius: 5px;
+  margin:50px;
+  display:inline-block;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 255, 0.451),lightblue,rgba(0, 0, 255, 0.514),rgba(0, 0, 0, 0.793));
+  padding:2%;
+}
+.content h1{
+  
+  color: rgb(189, 224, 225);
+  font-weight:100;
+  margin:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#content1{
+  transform: translateY();
+  transition:transform 0.6s;
+}
+#content1:hover > *{
+  transform: translateY(0px);
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    max-width: none; /* Allow the navigation to take full width on smaller screens */
+  }
+
+  nav a {
+    padding: 0 10px; /* Adjust padding for navigation links on smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Adjust the width for smaller screens */
+    margin: 5% 5%; /* Adjust the margin for smaller screens */
+  }
+}
+/*data analytics*/
+#wrapper1{
+  margin:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#img3{
+  width:500px ;
+  position: relative;
+}
+#imgsrc3{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+#content2{
+  height: 100%;
+  width:100%;
+  top: 0;
+  left: 0;
+  position:absolute;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+#content2:hover{
+  opacity: 1;
+  }
+  .content h1{
+  
+    color: rgb(189, 224, 225);
+    font-weight:100;
+    margin:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  #content2{
+    transform: translateY();
+    transition:transform 0.6s;
+  }
+  #content2:hover > * {
+    transform: translateY(0px);
+  }
+/*web design*/
+
+.input-box{
+  background: #fff;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 300px auto;
+  display: flex;
+  align-items: center;
+}
+.input-box input{
+width:100%; 
+padding: 10px 0;
+border: 0;
+outline: 0;
+font-size: 24px;
+color: #555;
+}
+.input-box img{
+  width: 35px;
+  cursor: pointer;
+}
+/*social media*/
+
+.gallery{
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div{
+width: 100%;
+display:grid;
+grid-template-columns: auto auto auto;
+grid-gap: 20px;
+padding: 10px;
+flex: none;
+}
+.gallery div img{
+width: 100%;
+filter: grayscale(100%);
+transition:transform 0.5s ;
+grid-template-columns: auto;
+}
+.gallery::-webkit-scrollbar{
+display: none;
+}
+.gallery-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+#backBtn, #nextBtn{
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
+.gallery div img:hover{
+ filter: grayscale(0);
+ cursor: pointer;
+ transform: scale(1.1);
+}
+span img{
+  height:100% ;
+}
+/* Media query for smaller screens, making the layout vertical */
+@media screen and (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 400px; /* Adjust this value based on your design */
+  }
+  .gallery div {
+    grid-template-columns: auto;
+  }
+ }
+
+
