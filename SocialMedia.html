@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Che Fernandez Portfolio</title>
 </head>
 <body>
     <header>
@@ -20,10 +20,18 @@
     </header>
     <main>
         <h2>Social Media</h2>
-        <div class="parent-container">
-            <div class="child-container">
-                <p>During my tim at Starlings cafe i managed their 
-                    social media account. all these images are taken and edited by me.
+        <div class="parent-container" id="parent1">
+            <div class="child-container" id="child1">
+                <p>During my time at Starlings cafe I saw an opportunity to
+                    improve their Instagram page and help keep it running.
+                    I created weekly content calenders and would
+                    photograph, edit and post daily, with approval from the
+                    manager at Starlings cafe.
+                    when taking and editing these images I kept that
+                    Starlings 'Artsy'
+                    , warm, homey aesthetic.
+                    
+                    
                 </p>
             </div>
           </div>
@@ -44,45 +52,29 @@
             <img src="images/next.png" id="nextBtn">
         </div>
     </main>
-    <script>
+<script>
 let scrollContainer = document.querySelector(".gallery");
 let backBtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
 
 
-const isMobile = window.innerWidth <=768;
-const scrollDirection = isMobile ? " vertical":"horizontal"
-scrollContainer.style.flexDirection = isMobile ? "column": "row";
-
 scrollContainer.addEventListener("wheel",(evt)=>{
  evt.preventDefault();
-    if(scrollDirection ==="horizontal"){
-        scrollContainer.scrollLeft  += evt.deltaY;
-    }else{
-        scrollContainer.scrollTop  += evt.deltaY;
-    }
+    scrollContainer.scrollLeft  += evt.deltaY;
     scrollContainer.style.scrollBehavior ="auto";
     scrollContainer.style.scrollBehavior ="smooth"
 });
 backBtn.addEventListener("click",()=>{
-  if(scrollDirection ==="horizontal"){
    scrollContainer.scrollLeft -= 900;
-  }else{
-    scrollContainer.scrollTop -= 900;
-  }
   scrollContainer.style.scrollBehavior ="smooth"
 }
 );
 nextBtn.addEventListener("click",()=>{
-    if(scrollDirection === "horizontal"){
     scrollContainer.scrollLeft += 900;
-    }else{
-        scrollContainer.scrollTop += 900;
-    }
     scrollContainer.style.scrollBehavior ="smooth"
 }
 );
 
-    </script>
+</script>
 </body>
 </html>
